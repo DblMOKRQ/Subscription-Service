@@ -22,14 +22,14 @@
 ├── internal/
 │   ├── config/                   # Загрузка конфигурации
 │   │   └── config.go
-│   │   └── config_test.go
 │   ├── middleware/               # HTTP-промежуточное ПО (например, ограничение частоты запросов)
-│   │   └── ratelimit.go
+│   │   └── middleware.go
 │   ├── models/                   # Структуры данных для подписок и запросов
 │   │   └── models.go
 │   ├── repository/               # Логика взаимодействия с базой данных (PostgreSQL)
 │   │   └── postgres.go
 │   │   └── postgres_test.go
+│   │   └── storage.go
 │   ├── router/                   # HTTP-маршрутизатор и определения обработчиков
 │   │   ├── handlers/
 │   │   │   └── handlers.go
@@ -43,6 +43,9 @@
 ├── migrations/
 │   └── 00001_init.sql            # SQL-скрипты миграции
 ├── docs/                         # Файлы документации Swagger
+│   └── docs.go
+│   └── swagger.json
+│   └── swagger.yaml
 ├── config/
 │   └── config.yaml               # Файл конфигурации приложения
 ├── docker-compose.yaml           # Docker Compose для настройки локальной разработки
