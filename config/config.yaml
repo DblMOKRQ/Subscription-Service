@@ -1,0 +1,13 @@
+storage:
+  user: "postgres"
+  password: "123"
+  host: "postgres"
+  port: "5432"
+  dbname: "subscriptions"
+  ssl_mode: "disable"
+rest:
+  addr: ":8080"
+ratelimit:
+  request_per_second: 1
+  burst: 5
+log_level: "debug"
