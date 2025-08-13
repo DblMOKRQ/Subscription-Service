@@ -68,7 +68,7 @@
 1.  **Клонируйте репозиторий:**
     ```bash
     git clone github.com/DblMOKRQ/Subscription-Service
-    cd effective_mobile_app
+    cd Subscription-Service
     ```
 
 2.  **Настройте переменные окружения:**
