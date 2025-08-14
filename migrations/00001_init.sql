@@ -5,10 +5,10 @@ CREATE TABLE subscriptions (
                                service_name VARCHAR(255) NOT NULL,
                                price INTEGER NOT NULL CHECK (price > 0),
                                user_id UUID NOT NULL,
-                                start_date DATE,
---                                start_date VARCHAR(7) NOT NULL CHECK (start_date ~ '^\d{2}-\d{4}$'),
---     end_date VARCHAR(7) CHECK (end_date ~ '^\d{2}-\d{4}$')
-    end_date DATE
+                                -- start_date DATE,
+                               start_date VARCHAR(7) NOT NULL CHECK (start_date ~ '^\d{2}-\d{4}$'),
+    end_date VARCHAR(7) CHECK (end_date ~ '^\d{2}-\d{4}$')
+    -- end_date DATE
 );
 
 -- Индексы для ускорения поиска
